@@ -1,6 +1,6 @@
 # gulp-monic
 
-Использование  [Monic](https://github.com/kobezzza/Monic) шаблонов вместе с Gulp.
+Использование [Monic](https://github.com/kobezzza/Monic) вместе с Gulp.
 
 [![NPM version](https://badge.fury.io/js/gulp-monic.svg)](http://badge.fury.io/js/gulp-monic)
 [![NPM dependencies](https://david-dm.org/kobezzza/gulp-monic.svg)](https://david-dm.org/kobezzza/gulp-monic)
