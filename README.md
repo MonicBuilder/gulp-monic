@@ -2,9 +2,9 @@
 
 Использование [Monic](https://github.com/kobezzza/Monic) вместе с Gulp.
 
-[![NPM version](https://badge.fury.io/js/gulp-monic.svg)](http://badge.fury.io/js/gulp-monic)
-[![NPM dependencies](https://david-dm.org/kobezzza/gulp-monic.svg)](https://david-dm.org/kobezzza/gulp-monic)
-[![Build Status](https://travis-ci.org/kobezzza/gulp-monic.svg?branch=master)](https://travis-ci.org/kobezzza/gulp-monic)
+[![NPM version](http://img.shields.io/npm/v/gulp-monic.svg?style=flat)](http://badge.fury.io/js/gulp-monic)
+[![NPM dependencies](http://img.shields.io/david/kobezzza/gulp-monic.svg?style=flat)](https://david-dm.org/kobezzza/gulp-monic)
+[![Build Status](http://img.shields.io/travis/kobezzza/gulp-monic.svg?style=flat&branch=master)](https://travis-ci.org/kobezzza/gulp-monic)
 
 ## Установка
 
