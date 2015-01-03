@@ -1,21 +1,24 @@
-# gulp-monic
+# [gulp](http://gulpjs.com/)-monic
 
-Использование [Monic](https://github.com/kobezzza/Monic) вместе с Gulp.
+Using [Monic](https://github.com/kobezzza/Monic) with Gulp.
 
 [![NPM version](http://img.shields.io/npm/v/gulp-monic.svg?style=flat)](http://badge.fury.io/js/gulp-monic)
 [![NPM dependencies](http://img.shields.io/david/kobezzza/gulp-monic.svg?style=flat)](https://david-dm.org/kobezzza/gulp-monic)
 [![Build Status](http://img.shields.io/travis/kobezzza/gulp-monic.svg?style=flat&branch=master)](https://travis-ci.org/kobezzza/gulp-monic)
 
-## Установка
+## Install
 
 ```bash
 npm install gulp-monic --save-dev
 ```
 
-## Пример
+## Usage
+
+**gulpfile.js**
 
 ```js
-var monic = require('gulp-monic');
+var gulp = require('gulp'),
+	monic = require('gulp-monic');
 
 gulp.task('monic', function () {
 	gulp.src('./myFile.js')
@@ -26,27 +29,7 @@ gulp.task('monic', function () {
 gulp.task('default', ['monic']);
 ```
 
-## [Параметры](https://github.com/kobezzza/Monic#%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D0%B1%D0%BE%D1%80%D1%89%D0%B8%D0%BA%D0%B0-%D0%B8%D0%B7-nodejs)
+## [Options](https://github.com/kobezzza/Monic#%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D0%B1%D0%BE%D1%80%D1%89%D0%B8%D0%BA%D0%B0-%D0%B8%D0%B7-nodejs)
+## [License](https://github.com/kobezzza/gulp-monic/blob/master/LICENSE)
 
-## Лицензия
-
-The MIT License (MIT)
-
-Copyright (c) 2014 Андрей Кобец (Kobezzza) <kobezzza@mail.ru>
-
-Данная лицензия разрешает лицам, получившим копию данного программного обеспечения и
-сопутствующей документации (в дальнейшем именуемыми «Программное Обеспечение»),
-безвозмездно использовать Программное Обеспечение без ограничений, включая неограниченное право на использование,
-копирование, изменение, добавление, публикацию, распространение, сублицензирование и/или
-продажу копий Программного Обеспечения, также как и лицам, которым предоставляется данное
-Программное Обеспечение, при соблюдении следующих условий:
-
-Указанное выше уведомление об авторском праве и данные условия должны быть включены во все копии или
-значимые части данного Программного Обеспечения.
-
-ДАННОЕ ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ ПРЕДОСТАВЛЯЕТСЯ «КАК ЕСТЬ», БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ, ЯВНО ВЫРАЖЕННЫХ ИЛИ ПОДРАЗУМЕВАЕМЫХ,
-ВКЛЮЧАЯ, НО НЕ ОГРАНИЧИВАЯСЬ ГАРАНТИЯМИ ТОВАРНОЙ ПРИГОДНОСТИ, СООТВЕТСТВИЯ ПО ЕГО КОНКРЕТНОМУ НАЗНАЧЕНИЮ И
-ОТСУТСТВИЯ НАРУШЕНИЙ ПРАВ. НИ В КАКОМ СЛУЧАЕ АВТОРЫ ИЛИ ПРАВООБЛАДАТЕЛИ НЕ НЕСУТ ОТВЕТСТВЕННОСТИ ПО ИСКАМ О
-ВОЗМЕЩЕНИИ УЩЕРБА, УБЫТКОВ ИЛИ ДРУГИХ ТРЕБОВАНИЙ ПО ДЕЙСТВУЮЩИМ КОНТРАКТАМ, ДЕЛИКТАМ ИЛИ ИНОМУ, ВОЗНИКШИМ ИЗ,
-ИМЕЮЩИМ ПРИЧИНОЙ ИЛИ СВЯЗАННЫМ С ПРОГРАММНЫМ ОБЕСПЕЧЕНИЕМ ИЛИ ИСПОЛЬЗОВАНИЕМ ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ ИЛИ
-ИНЫМИ ДЕЙСТВИЯМИ С ПРОГРАММНЫМ ОБЕСПЕЧЕНИЕМ.
+The MIT License.
