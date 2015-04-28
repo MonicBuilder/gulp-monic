@@ -1,4 +1,5 @@
-var through = require('through2'),
+var
+	through = require('through2'),
 	PluginError = require('gulp-util').PluginError,
 	monic = require('monic');
 
