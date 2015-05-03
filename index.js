@@ -1,4 +1,4 @@
-/*
+/*!
  * gulp-monic
  * https://github.com/MonicBuilder/gulp-monic
  *
