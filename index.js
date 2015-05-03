@@ -27,7 +27,7 @@ module.exports = function (opts) {
 					return cb(new PluginError('gulp-monic', err.message));
 				}
 
-				if (opts.sourceMaps && sourceMap) {
+				if (sourceMap) {
 					applySourceMap(file, sourceMap.map);
 				}
 
