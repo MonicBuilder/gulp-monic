@@ -1,3 +1,11 @@
+/*
+ * gulp-monic
+ * https://github.com/MonicBuilder/gulp-monic
+ *
+ * Released under the MIT license
+ * https://github.com/MonicBuilder/gulp-monic/blob/master/LICENSE
+ */
+
 var
 	through = require('through2'),
 	PluginError = require('gulp-util').PluginError,
