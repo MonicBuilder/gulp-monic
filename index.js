@@ -1,31 +1,32 @@
 var
 	through = require('through2'),
 	PluginError = require('gulp-util').PluginError,
+	applySourceMap = require('vinyl-sourcemaps-apply'),
 	monic = require('monic');
 
-module.exports = function (options) {
-	options = options || {};
+module.exports = function (opts) {
+	opts = opts || {};
+	opts.cwd = process.cwd();
 
-	function compile(file, enc, callback) {
+	function compile(file, enc, cb) {
 		if (file.isStream()) {
-			return callback(new PluginError('gulp-monic', 'Streaming not supported'));
+			return cb(new PluginError('gulp-monic', 'Streaming not supported'));
 		}
 
 		if (file.isBuffer()) {
-			try {
-				options.content = String(file.contents);
-				monic.compile(file.path, options, function (err, data) {
-					if (err) {
-						return callback(new PluginError('gulp-monic', err.message));
-					}
+			opts.content = String(file.contents);
+			monic.compile(file.path, opts, function (err, data, sourceMap) {
+				if (err) {
+					return cb(new PluginError('gulp-monic', err.message));
+				}
 
-					file.contents = new Buffer(data);
-					callback(null, file);
-				});
+				if (file.sourceMap && sourceMap) {
+					applySourceMap(file, sourceMap.map);
+				}
 
-			} catch (err) {
-				return callback(new PluginError('gulp-monic', err.message));
-			}
+				file.contents = new Buffer(data);
+				cb(null, file);
+			});
 		}
 	}
 
