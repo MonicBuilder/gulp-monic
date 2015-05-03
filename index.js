@@ -6,7 +6,9 @@ var
 
 module.exports = function (opts) {
 	opts = opts || {};
+
 	opts.cwd = process.cwd();
+	opts.saveFiles = false;
 
 	function compile(file, enc, cb) {
 		if (file.isStream()) {
@@ -14,13 +16,18 @@ module.exports = function (opts) {
 		}
 
 		if (file.isBuffer()) {
-			opts.content = String(file.contents);
+			opts.content =
+				String(file.contents);
+
+			opts.sourceMaps =
+				Boolean(file.sourceMap);
+
 			monic.compile(file.path, opts, function (err, data, sourceMap) {
 				if (err) {
 					return cb(new PluginError('gulp-monic', err.message));
 				}
 
-				if (file.sourceMap && sourceMap) {
+				if (opts.sourceMaps && sourceMap) {
 					applySourceMap(file, sourceMap.map);
 				}
 
