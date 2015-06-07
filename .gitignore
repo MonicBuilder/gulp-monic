@@ -41,13 +41,11 @@ bower_components
 node_modules
 
 # Build && test
-deploy
-coverage
+/coverage
 
 # Log
 *.log
-error.txt
 
 # Temporary
 *.tmp
-tmp
+/tmp
