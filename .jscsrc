@@ -1,7 +1,7 @@
 {
   "fileExtensions": [".js"],
   "excludeFiles": [
-    "node_modules/**/*"
+    "node_modules/**"
   ],
 
   "validateIndentation": "\t",
@@ -14,7 +14,7 @@
 
   "maximumLineLength": {
     "value": 120,
-    "allowUrlComments": true
+    "allowComments": true
   },
 
   "disallowYodaConditions": true,
@@ -100,8 +100,7 @@
 
   "disallowOperatorBeforeLineBreak": [
     "~",
-    ".",
-    "::"
+    "."
   ],
 
   "requireSpacesInFunctionDeclaration": {
