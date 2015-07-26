@@ -32,7 +32,7 @@ module.exports = function (opts) {
 
 			monic.compile(file.path, opts, function (err, data, sourceMap) {
 				if (err) {
-					return cb(new PluginError('gulp-monic', err.message));
+					return cb(new PluginError('gulp-monic', err));
 				}
 
 				if (sourceMap) {
