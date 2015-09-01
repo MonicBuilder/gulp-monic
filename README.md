@@ -1,5 +1,5 @@
 [gulp](http://gulpjs.com)-monic
-================================
+===============================
 
 Using [Monic](https://github.com/MonicBuilder/Monic) with Gulp.
 
