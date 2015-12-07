@@ -11,7 +11,7 @@ Using [Monic](https://github.com/MonicBuilder/Monic) with Gulp.
 ## Install
 
 ```bash
-npm install gulp-monic --save-dev
+npm install monic gulp-monic --save-dev
 ```
 
 ## Usage
