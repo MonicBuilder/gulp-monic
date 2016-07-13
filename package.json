@@ -3,7 +3,7 @@
   "description": "Using Monic with Gulp.",
   "homepage": "https://github.com/MonicBuilder/gulp-monic",
   "main": "index.js",
-  "version": "2.0.11",
+  "version": "2.0.12",
   "license": "MIT",
   "author": {
     "name": "kobezzza",
@@ -33,7 +33,7 @@
     "vinyl-sourcemaps-apply": "^0.2.0"
   },
   "devDependencies": {
-    "eslint": "^2.13.1",
+    "eslint": "^3.0.0",
     "gulp": "^3.9.0",
     "monic": "^2.0.0"
   },
