@@ -5,7 +5,8 @@ Using [Monic](https://github.com/MonicBuilder/Monic) with Gulp.
 
 [![NPM version](http://img.shields.io/npm/v/gulp-monic.svg?style=flat)](http://badge.fury.io/js/gulp-monic)
 [![NPM dependencies](http://img.shields.io/david/MonicBuilder/gulp-monic.svg?style=flat)](https://david-dm.org/MonicBuilder/gulp-monic)
-[![NPM devDependencies](http://img.shields.io/david/dev/MonicBuilder/gulp-monic.svg?style=flat)](https://david-dm.org/MonicBuilder/gulp-monic#info=devDependencies&view=table)
+[![NPM devDependencies](http://img.shields.io/david/dev/MonicBuilder/gulp-monic.svg?style=flat)](https://david-dm.org/MonicBuilder/gulp-monic?type=dev)
+[![NPM peerDependencies](http://img.shields.io/david/peer/MonicBuilder/gulp-monic.svg?style=flat)](https://david-dm.org/MonicBuilder/gulp-monic?type=peer)
 [![Build Status](http://img.shields.io/travis/MonicBuilder/gulp-monic.svg?style=flat&branch=master)](https://travis-ci.org/MonicBuilder/gulp-monic)
 
 ## Install
