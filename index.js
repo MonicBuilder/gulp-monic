@@ -1,3 +1,5 @@
+'use strict';
+
 /*!
  * gulp-monic
  * https://github.com/MonicBuilder/gulp-monic
@@ -6,7 +8,7 @@
  * https://github.com/MonicBuilder/gulp-monic/blob/master/LICENSE
  */
 
-var
+const
 	through = require('through2'),
 	PluginError = require('gulp-util').PluginError,
 	applySourceMap = require('vinyl-sourcemaps-apply'),
@@ -18,7 +20,7 @@ module.exports = function (opts) {
 	opts.cwd = process.cwd();
 	opts.saveFiles = false;
 
-	function compile(file, enc, cb) {
+	function compile(file, ignore_enc, cb) {
 		if (file.isStream()) {
 			return cb(new PluginError('gulp-monic', 'Streaming not supported'));
 		}
@@ -30,7 +32,7 @@ module.exports = function (opts) {
 			opts.sourceMaps =
 				Boolean(file.sourceMap);
 
-			monic.compile(file.path, opts, function (err, data, sourceMap) {
+			monic.compile(file.path, opts, (err, data, sourceMap) => {
 				if (err) {
 					return cb(new PluginError('gulp-monic', err));
 				}
