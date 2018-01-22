@@ -28,14 +28,14 @@
     "monic"
   ],
   "dependencies": {
-    "gulp-util": "^3.0.1",
+    "plugin-error": "^1.0.0",
     "through2": "^2.0.0",
     "vinyl-sourcemaps-apply": "^0.2.0"
   },
   "devDependencies": {
-    "eslint": "^4.0.0",
+    "eslint": "^4.16.0",
     "gulp": "^3.9.0",
-    "monic": "^2.0.0"
+    "monic": "^2.5.0"
   },
   "peerDependencies": {
     "gulp": "*",

@@ -10,7 +10,7 @@
 
 const
 	through = require('through2'),
-	PluginError = require('gulp-util').PluginError,
+	PluginError = require('plugin-error'),
 	applySourceMap = require('vinyl-sourcemaps-apply'),
 	monic = require('monic');
 
