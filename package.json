@@ -33,6 +33,7 @@
     "vinyl-sourcemaps-apply": "^0.2.0"
   },
   "devDependencies": {
+    "@types/through2": "^2.0.33",
     "eslint": "^4.16.0",
     "gulp": "^4.0.0",
     "monic": "^2.5.1"
