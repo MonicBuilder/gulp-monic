@@ -41,7 +41,7 @@ module.exports = function (opts) {
 					applySourceMap(file, sourceMap.map);
 				}
 
-				file.contents = new Buffer(data);
+				file.contents = Buffer.from(data);
 				cb(null, file);
 			});
 		}
