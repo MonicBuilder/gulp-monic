@@ -3,7 +3,7 @@
   "description": "Using Monic with Gulp.",
   "homepage": "https://github.com/MonicBuilder/gulp-monic",
   "main": "index.js",
-  "version": "2.0.14",
+  "version": "2.0.15",
   "license": "MIT",
   "author": {
     "name": "kobezzza",
@@ -18,7 +18,7 @@
     "url": "https://github.com/MonicBuilder/gulp-monic/issues"
   },
   "engines": {
-    "node": ">= 8"
+    "node": ">= 12"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0"
@@ -29,14 +29,13 @@
   ],
   "dependencies": {
     "plugin-error": "^1.0.1",
-    "through2": "^3.0.1",
+    "through2": "^4.0.2",
     "vinyl-sourcemaps-apply": "^0.2.1"
   },
   "devDependencies": {
-    "@types/through2": "^2.0.34",
-    "eslint": "^6.0.1",
+    "eslint": "^7.30.0",
     "gulp": "^4.0.2",
-    "monic": "^2.6.0"
+    "monic": "^2.6.1"
   },
   "peerDependencies": {
     "gulp": "*",
