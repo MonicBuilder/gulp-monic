@@ -20,6 +20,8 @@ module.exports = function (opts) {
 	opts.cwd = process.cwd();
 	opts.saveFiles = false;
 
+	return through.obj(compile);
+
 	function compile(file, ignore_enc, cb) {
 		if (file.isStream()) {
 			return cb(new PluginError('gulp-monic', 'Streaming not supported'));
@@ -46,6 +48,4 @@ module.exports = function (opts) {
 			});
 		}
 	}
-
-	return through.obj(compile);
 };
